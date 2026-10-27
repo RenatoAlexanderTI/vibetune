@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #141318;
+  --color-surface-dim: #141318;
+  --color-surface-bright: #3a383e;
+  --color-surface-container: #201f24;
+  --color-surface-container-low: #1c1b20;
+  --color-surface-container-high: #2b292f;
+  --color-surface-container-highest: #36343a;
+  --color-surface-container-lowest: #0f0d13;
+  --color-surface-variant: #36343a;
+  
+  --color-primary: #ddb7ff;
+  --color-primary-container: #b76dff;
+  --color-primary-fixed: #f0dbff;
+  --color-primary-fixed-dim: #ddb7ff;
+  --color-on-primary: #490080;
+  --color-on-primary-container: #400071;
+
+  --color-secondary: #ffb0cd;
+  --color-secondary-container: #aa0266;
+  --color-on-secondary: #640039;
+  --color-on-secondary-container: #ffbad3;
+
+  --color-tertiary: #4edea3;
+  --color-tertiary-container: #00a572;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-on-tertiary: #003824;
+  --color-on-tertiary-container: #00311f;
+
+  --color-background: #141318;
+  --color-on-background: #e6e1e8;
+  --color-on-surface: #e6e1e8;
+  --color-on-surface-variant: #cfc2d6;
+  --color-outline: #988d9f;
+  --color-outline-variant: #4d4354;
+
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+
+  --font-headline-lg: "Outfit", sans-serif;
+  --font-headline-md: "Outfit", sans-serif;
+  --font-headline-sm: "Outfit", sans-serif;
+  --font-display-pitch: "Outfit", sans-serif;
+  --font-display-pitch-mobile: "Outfit", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #141318;
+    color: #e6e1e8;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Renderizado de íconos de Material Symbols */
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Ocultar barra de desplazamiento */
+::-webkit-scrollbar {
+  display: none;
+}
